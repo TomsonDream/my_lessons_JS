@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <div class="body">
+    <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та
+        загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+    <div class="list">
+        <h4>Загальний чек </h4>
+        <script>
+            let quantitu1 = parseInt(prompt('Введіть кількість  товару1','0'))
+            let quantitu2 = parseInt(prompt('Введіть кількість  товару2','0'))
+            let quantitu3 = parseInt(prompt('Введіть кількість  товару3','0'))
+
+
+            let price1 = parseFloat(prompt('Введіть вартість товару','0'))
+            let price2 = parseFloat(prompt('Введіть вартість товару','0'))
+            let price3 = parseFloat(prompt('Введіть вартість товару','0'))
+
+
+            let sum1 =  (quantitu1*price1)
+            let sum2 =  (quantitu2*price2)
+            let sum3 =  (quantitu3*price3)
+
+            let totalPrice = sum1+sum2+sum3
+
+            document.write(`
+             Товар1: <br>
+             ${quantitu1}шт*${price1.toFixed(2)}грн = ${sum1.toFixed(2)}грн <br>
+             Товар2: <br>
+             ${quantitu2}шт*${price2.toFixed(2)}грн = ${sum2.toFixed(2)}грн <br>
+             Товар3: <br>
+             ${quantitu3}шт*${price3.toFixed(2)}грн = ${sum3.toFixed(2)}грн <br>
+             Загалом до сплати = ${totalPrice}грн
+              `)
+              
+        </script>     
+
+        </div>
+        <div class="link"> <a href="/index.html"> На головну</a>
+        </div>
+        <style>
+            .link {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                background-color: rgb(234, 235, 172);
+                width: 120px;
+                height: 30px;
+                border-radius: 50px;
+                margin-top: 55px;
+                border: 3px;
+                border-style: solid;
+                border-color: rgb(46, 46, 129);
+                margin: 0 auto; 
+                padding: 10px;
+            }
+        
+            .body {
+                background-color: rgba(119, 203, 238, 0.945);
+                height: 900px;
+                font-size: 35px;
+            }
+            ul{
+                font-style: italic;
+                font-size: 24px;
+                border: 2px;
+                
+            }
+            .list{
+                background-color: rgb(132, 187, 242);
+            }
+            h4{
+                margin-left: 100px;
+            }
+        </style>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 0</title>
+</head>
+<body>
+    <div class="body">
+    <p> Обчислити значення виразів <br>
+        S1=a+12+b <br>
+        S2=√(a+b)/(2*a) <br>
+        S3=∛(a+b)*c <br>
+        S4=sin⁡(a/-b) <br>
+    </p>
+    
+<script>
+ // Задаю дані
+let a = parseFloat(prompt('Введіть число a', '0'))
+let b = parseFloat(prompt('Введіть число b', '0'))
+let c = parseFloat(prompt('Введіть число c', '0'))
+
+// Обчислюю вирази
+let sum = a + b
+let sum1 = sum + 12 
+let sum2 = Math.sqrt( (sum) / 2*a)
+let sum3 = Math.pow((sum)*c , 1/3)
+let sum4 = Math.sin(a / -b)
+
+
+// Виводжу разультат
+document.write(`S1 = ${sum1} <br>`)
+    document.write(`S2 = ${sum2} <br>`)
+    document.write(`S3 = ${sum3} <br>`)
+    document.write(`S4 = ${sum4} `)  
+    
+
+
+
+
+</script>
+<div class="link"><a href="/index.html">На головну</a></div>
+
+<style>
+.link{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+background-color: rgb(234, 235, 172);
+width: 120px;
+height: 30px;
+border-radius: 50px;
+margin-top:55px;
+border: 3px;
+border-style: solid;
+border-color: rgb(46, 46, 129);
+margin:0 auto;
+padding: 10px;}
+.a{ display: inline-block; 
+     
+}
+ .body {
+            background-color: rgba(119, 203, 238, 0.945);
+            height: 900px; 
+             font-size: 35px;   
+        }
+</style>
+</div>
+</body>
+</html>

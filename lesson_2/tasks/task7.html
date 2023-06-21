@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    
+    <p>Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</p>
+    <script>
+       
+       let maxMonth=13,
+       minMonth=1,
+       maxDay=7,
+       minDay=1
+      let numMonth=minMonth+Math.floor(Math.random()*(maxMonth- minMonth+1))
+     
+      let numDay = minDay + Math.floor(Math.random() * (maxDay - minDay + 1))
+      let randomSum = numMonth+ numDay
+
+
+      document.write(`
+      Cумa випадкового номера місяця та випадкового номера дня : = ${randomSum}`)
+      </script>
+      <div class="link"> <a href="/index.html"> На головну</a>
+        </div >
+      <style>
+         .link {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                background-color: rgb(234, 235, 172);
+                width: 120px;
+                height: 30px;
+                border-radius: 50px;
+                margin-top: 55px;
+                border: 3px;
+                border-style: solid;
+                border-color: rgb(46, 46, 129);
+                margin: 0 auto;
+                padding: 10px;}
+            
+
+                body {
+                background-color: rgba(119, 203, 238, 0.945);
+                height: 900px;
+                font-size: 35px;}
+            
+            .list{
+                background-color: rgb(132, 187, 242);
+            }
+            </style>
+
+      
+    
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div class="body">
+    <p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+    </p>
+    <script>
+        // вводимо дані
+        let firstnumber = parseFloat(prompt('Введіть перше дісне число', '0'))
+        let secondNumber = parseFloat(prompt('Введіть друге дісне число','0'))
+
+
+        // обчислюємо результат
+        let sum = firstnumber + secondNumber
+        let prod = firstnumber * secondNumber
+        let diff = firstnumber - secondNumber
+        // виводимо результат
+         document.write(`  
+        
+     <table  border ="2px">
+        <tr>
+     <th>Дія</th>
+     <th>Отримане значення</th>
+       </tr>
+        <tr>
+            <th>Cума</th>
+            <td>${sum}</td>
+        </tr>
+        <tr>
+            <th>Добуток</th>
+            <td>${prod}</td>
+        </tr>
+        <tr>
+            <th>Частка</th>
+            <td>${diff}</td>
+        </tr>
+        
+        </table> 
+        `)
+        </script>
+        <div class="link"><a href="/index.html">На головну</a></div>
+        
+        <style>
+            .link {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                background-color: rgb(234, 235, 172);
+                width: 120px;
+                height: 30px;
+                border-radius: 50px;
+                margin-top: 55px;
+                border: 3px;
+                border-style: solid;
+                border-color: rgb(46, 46, 129);
+                margin: 0 auto;
+                padding: 10px;
+            }
+        
+            .a {
+                display: inline-block;
+        
+            }
+             .body {
+            background-color: rgba(119, 203, 238, 0.945);
+            height: 900px;  
+             font-size: 35px;  
+        }
+        </style>
+        </div>
+        
+    
+</body>
+</html>
