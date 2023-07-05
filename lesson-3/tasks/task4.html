@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        p {
+            font-size: 24px;
+            color: darkgreen;
+        }
+    
+        body {
+            font-family: Roboto, serif;
+            color: rgb(43, 43, 87);
+            font-size: 30px;
+        }
+    
+        .button {
+            margin-top: 100px;
+           
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <title>Task 4</title>
+    
+</head>
+
+<body>
+    <p>4. З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом,
+        працівником,
+        пенсіонером).</p>
+    <script>
+        let userAge = parseInt (prompt('Введіть вік людини'))
+
+        if (1<=userAge && userAge<=7) alert ('Дитина в садочку')
+        else if (8<= userAge && userAge <=17) alert ('Школяр')
+        else if (18 <= userAge && userAge <= 21) alert('Студент')
+        else if (22 <= userAge && userAge <= 65) alert('Працівник')
+        else if (65 <= userAge ) alert('Пенсіонер')
+        else alert ('Некорректний ввід даних') 
+    </script>
+    <div class="button">
+        <a href="../index.html">Повернутись на головну сторінку <br><img src="/img/images.png"></a>
+    </div>
+</body>
+
+</html>
