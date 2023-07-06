@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      a {
+         width: 100 px;
+         height: 150 px;
+      }
+      body{
+            font-family: Roboto, serif;
+        }
+      p {
+         font-size: 24px;
+         color: darkgreen;
+      }
+      body{
+         color: rgb(12, 12, 86);
+         font-size: 30px;
+      }
+      .button {
+            margin-top: 300px;
+        }
+   </style>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <title>Task 1</title>
+</head>
+<body>
+   
+   <p>1. З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої
+   кількість цукерок є більшою, або вивести, що кількість однакова.</p>
+    <script>
+       let firstChildName = prompt("Введіть ім'я першої дитини")
+       let secondChildName = prompt("Введіть ім'я другої дитини")
+       let numOfCandiesFirstChild = parseInt(prompt("Введіть кількість цукерок першої дитини"))
+       let numOfCandiesSecondChild = parseInt(prompt("Введіть кількість цукерок другої дитини"))
+       let conclusion
+
+        if (numOfCandiesFirstChild > numOfCandiesSecondChild) 
+            
+        conclusion = (`ім'я першої дитини`)
+          else if (numOfCandiesFirstChild < numOfCandiesSecondChild) 
+             conclusion = (`ім'я другої дитини`)
+          else 
+             conclusion = (`Паритет`)    
+        
+        document.write(conclusion)      
+    </script>
+     <div class="button">
+      <img src="../img/images.png">
+        <a href="../index.html">Повернутись на головну сторінку </a>
+     </div>
+</body>
+</html>

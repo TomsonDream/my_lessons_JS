@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Roboto, serif;
+        }
+        p {
+            font-size: 24px;
+            color: darkgreen;
+        }
+    
+        body {
+            color: rgb(43, 43, 87);
+            font-size: 30px;
+        }
+        .button {
+            margin-top: 200px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <title>Task 3</title>
+</head>
+
+<body>
+   <p>3. Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.</p>
+    <script>
+        const min = 1
+        const max = 5
+       
+        let userNumberFirstOption = parseInt(prompt('Введіть будь-яке число від 1 до 5'))
+        let randomNumber = min + Math.floor(Math.random() * (max - min + 1))
+    
+ 
+        
+        if (userNumberFirstOption === randomNumber)
+        alert ('Вітаю !')
+         else  alert('Нажаль невдала перша спроба')
+          let userNumberSecondOption = parseInt(prompt('Вдруге введіть будь-яке число від 1 до 5'))
+
+         if (userNumberSecondOption === randomNumber)
+         alert('Вітаю !')
+         else alert('Пощастить наступного разу')
+        document.write('Вдалого наступного разу')
+        
+
+
+    
+        
+
+        
+
+    </script>
+    <div class="button">
+        <a href="../index.html">Повернутись на головну сторінку <br><img src="/img/images.png"></a>
+    </div>
+</body>
+
+</html>
