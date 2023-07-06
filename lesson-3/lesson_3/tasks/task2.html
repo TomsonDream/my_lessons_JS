@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body{
+            font-family: Roboto, serif;
+        }
+        p {
+            font-size: 24px;
+             color: darkgreen;
+        }
+    
+        body {
+            color: rgb(43, 43, 87);
+            font-size: 30px;
+        }
+        .button {
+            margin-top: 300px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <title>Task 2</title>
+
+
+
+</head>
+
+<body>
+    <p>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще
+    залишаються гроші, то пропонуємо купити лотерею за 4 грн.</p>
+    <script>
+        let  produсtCost = parseFloat(prompt ('Введіть вартість товару'))
+        let  amountOfMoney = parseFloat(prompt ('Введіть суму грошей'))
+         const lotteryCost = 4
+         let restOfMoney = amountOfMoney - produсtCost
+             
+     if (produсtCost < amountOfMoney) 
+     alert('Дякуємо за придбання')
+        else alert('Нажаль,коштів недостатньо')
+        if (restOfMoney >= lotteryCost)
+        alert('Чи бажаєте придбати лотерею за 4 грн.?')
+           
+    </script>
+    <div class="button">
+        <img src="../img/images.png">
+        <a href="../index.html">Повернутись на головну сторінку </a>
+    </div>
+</body>
+
+</html>
