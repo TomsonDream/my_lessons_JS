@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Roboto;
+            font-size: 24px;
+            color: darkblue;
+            background-color: rgb(139, 178, 236);
+          
+        }
+        
+    </style>
+    <title>task3</title>
+</head>
+<body>
+    <p>Ігровий автомат. Випадково вибираємо зображення у 3 позиціях. Вибір у кожній позиції вибирається як одне з чотирьох
+    зображень. Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три
+    третіх – 500, три четвертих зображення – 1000грн). Використати цикли і switch (для вибору зображення за номером).</p>
+    
+
+    
+       <script>
+        const rangeStart = 1,
+                rangeEnd = 4
+
+            let sum = 0
+            for (let i = 0; i < 3; i++) {
+                let imgNum =
+                    rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+                document.write(`<img src="../img/img${imgNum}.jpg"><br>`)
+                sum += Math.pow(10, imgNum - 1) //sum +=  10 ^ imgNum-1
+            }
+            let money = 0
+            switch (sum) {
+                case 30:
+                    money = 100
+                    break
+                case 300:
+                    money = 200
+                    break
+                case 3000:
+                    money = 500
+                    break
+                case 30000:
+                    money = 1000
+                    break
+            }
+            document.write(`<p  style=" margin-top:50px;color:red;font-size:60px;">Виграш = ${money}</p">`)    
+
+              </script> 
+             
+        
+            
+    
+</body>
+</html>
+            
+        
+   
